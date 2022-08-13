@@ -1,0 +1,3 @@
+O fluxo do sistema começa quando o cliente tem uma necessidade ou precisa de alguma informação, ele informa um titulo e uma descrição detalhada pondendo anexar 
+documentos e imagens para melhor analise que sera feita pelo pessoa do suporte, que analisara a solicitação e encaminhara ao setor responsavel que por sua vez 
+realisara analise e se necessario o desenvolvimento e em todo momento ficara em contato com cliente.
