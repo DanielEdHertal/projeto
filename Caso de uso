@@ -1,5 +1,4 @@
 @startuml
-
 title Fluxo do Sistema de chamado
 
 actor :Cliente: as c
@@ -10,18 +9,21 @@ c -- CS
 (Definir setor responsavel) as AS
 S -- AS
 
+
 (Atribuir para analista) as APA
 (Entrar em contato com cliente) as ECC
 
+S ..> ECC : <<EXTEND>>
+AS ..> (CS) : <<INCLUDE>>
 AS ..> (APA) : <<EXTEND>>
-AS <..> (ECC) : <<EXTEND>>
 
 
 :Analista: as AN
 AN ..> (ECC) : <<EXTEND>>
 
-(Analisar Desenvolvimento) as AND
+(Fazer Analise de Desenvolvimento) as AND
 AN -- AND
+AND ..> (AS) : <<INCLUDE>>
 
 (Criar Tarefa de desenvolvimento) as CD
 AND --> CD
@@ -29,5 +31,4 @@ AND --> CD
 (Atribuir ao Desenvolvedor) as AD
 
 CD --> AD
-
 @enduml
